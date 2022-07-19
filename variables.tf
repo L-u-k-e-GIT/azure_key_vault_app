@@ -51,9 +51,4 @@ variable "MD_ARM_TENANT_ID" {
 }
 
 
-variable "MD_ALL_TAGS" {
-  description = "TAGS"
-  type        = string
-  default     = ""
-
-}
+variable "MD_ALL_TAGS" { }
