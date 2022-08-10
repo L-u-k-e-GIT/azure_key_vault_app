@@ -43,6 +43,8 @@ variable "MD_SUBSCRIPTION_PREFIX_SHARED" {
 
 }
 
+
+
 variable "MD_ARM_TENANT_ID" {
   description = "Tenand Id"
   type        = string
@@ -50,5 +52,34 @@ variable "MD_ARM_TENANT_ID" {
 
 }
 
+variable "MD_PE_NAME" {
+  description = "Private Endpoint Name"
+  type        = string
+  default     = ""
+
+}
+
+variable "MD_PESC_NAME" {
+  description = "Private Endpoint Service Connection Name"
+  type        = string
+  default     = ""
+
+}
+
+variable "MD_SUBNET_ID" {
+  description = "Subnet ID for private endpoint"
+  type        = string
+  default     = ""
+
+}
+
+variable "MD_DNS_privatelink_keyvault" {
+  description = "DNS zone for key vault private link"
+  type        = string
+  default     = ""
+
+}
+
 
 variable "MD_ALL_TAGS" { }
+
