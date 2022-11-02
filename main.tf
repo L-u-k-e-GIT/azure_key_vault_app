@@ -25,6 +25,11 @@ resource "azurerm_key_vault" "wkv" {
       "Get",
     ]
   }
+  lifecycle {
+    ignore_changes = [
+     access_policy
+    ]
+  }
 }
 
 
