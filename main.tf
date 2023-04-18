@@ -63,5 +63,5 @@ output "KV_ID" {
   }
 
 output "pe_id" {
-  value = azurerm_private_endpoint.pe_kv.id
+  value = azurerm_private_endpoint.pe_kv.id
 }
