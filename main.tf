@@ -61,3 +61,7 @@ resource "azurerm_private_endpoint" "pe_kv" {
 output "KV_ID" {
   value     = azurerm_key_vault.wkv.id
   }
+
+output "pe_id" {
+  value = azurerm_private_endpoint.pe_kv.id
+}
